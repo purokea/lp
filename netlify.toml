@@ -1,3 +1,23 @@
 [build]
   command = "npm run build"
   publish = "dist"
+
+[[redirects]]
+  from = "/houmon"
+  to = "/houmon/"
+  status = 301
+
+[[redirects]]
+  from = "/jihi"
+  to = "/jihi/"
+  status = 301
+
+[[redirects]]
+  from = "/isou"
+  to = "/isou/"
+  status = 301
+
+[[redirects]]
+  from = "/seikatsu"
+  to = "/seikatsu/"
+  status = 301
