@@ -1280,15 +1280,28 @@ img {
   text-align: center;
 }
 
-.contact-policy-btn {
-  background: #FFE066;
-  color: #3E3A39;
+.btn--rules {
+  background: #E8F5E9 !important;
+  color: #3E3A39 !important;
+}
+.btn--rules:hover {
+  background: #C8E6C9 !important;
 }
 
-.contact-rules-btn,
-.contact-disclosure-btn {
-  background: #8BC34A;
-  color: #fff;
+.btn--disclosure {
+  background: #E3F2FD !important;
+  color: #3E3A39 !important;
+}
+.btn--disclosure:hover {
+  background: #BBDEFB !important;
+}
+
+.btn--policy {
+  background: #FFE066 !important;
+  color: #3E3A39 !important;
+}
+.btn--policy:hover {
+  background: #FFD54F !important;
 }
 
 .contact-company-btn:hover,
@@ -1302,12 +1315,10 @@ img {
 
 .contact-company-btn:hover {
   background: #f0fdf4;
-  border-color: #fff;
 }
 
 .contact-policy-btn:hover {
   background: #FFD54F;
-  border-color: #fff;
 }
 
 .footer-nav .separator {
