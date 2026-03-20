@@ -973,6 +973,85 @@ img {
   color: #fff;
 }
 
+/* ---- Message Section ---- */
+.message-section {
+  margin-bottom: 80px;
+}
+
+.message-card {
+  background: #fff;
+  border-radius: 24px;
+  padding: 48px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  border: 1px solid #f0f0f0;
+  position: relative;
+  overflow: hidden;
+}
+
+.message-card::before {
+  content: "“";
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  font-size: 12rem;
+  color: #f0fdf4;
+  font-family: serif;
+  line-height: 1;
+  z-index: 0;
+}
+
+.message-content {
+  position: relative;
+  z-index: 1;
+}
+
+.message-highlight {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #2E7D32;
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+.message-content p {
+  font-size: 1.05rem;
+  line-height: 2;
+  margin-bottom: 24px;
+  color: #444;
+}
+
+.message-list {
+  list-style: none;
+  padding: 0;
+  margin: 32px 0;
+  background: #fdfcf0;
+  padding: 24px;
+  border-radius: 16px;
+  border-left: 4px solid #FFE066;
+}
+
+.message-list li {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.8;
+  margin-bottom: 12px;
+  color: #555;
+}
+
+.message-list li:last-child {
+  margin-bottom: 0;
+}
+
+.message-signature {
+  text-align: right;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #333;
+  margin-top: 40px !important;
+  border-top: 1px solid #eee;
+  padding-top: 24px;
+}
+
 /* ---- Animation ---- */
 @keyframes fadeInUp {
   from {
