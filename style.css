@@ -166,6 +166,15 @@ img {
   animation: fadeInUp 0.8s ease-out;
 }
 
+.hero-catch {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #4A8C3F;
+  margin-bottom: 8px;
+  letter-spacing: 0.15em;
+  font-family: 'Zen Maru Gothic', serif;
+}
+
 .hero-sub {
   font-size: 1rem;
   color: #888;
@@ -373,32 +382,71 @@ img {
     #FFFDF5;
 }
 
-.target-list {
-  list-style: none;
-  max-width: 700px;
-  margin: 0 auto;
+.target-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
 }
 
-.target-list li {
-  position: relative;
-  padding: 16px 16px 16px 40px;
-  margin-bottom: 12px;
+.target-card {
   background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
-  font-size: 0.95rem;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
-.target-list li::before {
-  content: '';
+.target-card-header {
+  padding: 16px 20px;
+  color: #fff;
+}
+
+.target-card-header--1 { background: linear-gradient(135deg, #FFC107, #FFE066); color: #3E3A39; }
+.target-card-header--2 { background: linear-gradient(135deg, #8BC34A, #4A8C3F); }
+.target-card-header--3 { background: linear-gradient(135deg, #FF7096, #F8A4B8); }
+.target-card-header--4 { background: linear-gradient(135deg, #42A5F5, #90CAF9); }
+
+.target-card-header h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.target-card-body {
+  padding: 24px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.target-text {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #555;
+  width: 100%;
+}
+
+.target-list-small {
+  list-style: none;
+  font-size: 0.85rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.target-list-small li {
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 8px;
+}
+
+.target-list-small li::before {
+  content: '・';
   position: absolute;
-  left: 16px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #8BC34A, #4A8C3F);
+  left: 0;
+  color: #8BC34A;
+  font-weight: bold;
 }
 
 /* ---- Transport ---- */
@@ -933,6 +981,11 @@ img {
     display: inline;
   }
 
+  .hero-catch {
+    font-size: 1.15rem;
+    margin-bottom: 4px;
+  }
+
   .hero-title {
     font-size: 2rem;
   }
@@ -951,6 +1004,11 @@ img {
   }
 
   .services-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .target-grid {
     grid-template-columns: 1fr;
     gap: 16px;
   }
@@ -994,7 +1052,8 @@ img {
   }
 
   .header-cta-tel {
-    font-size: 0.95rem;
+    font-size: 1.1rem;
+    font-weight: 900;
   }
 
   .service-card {
@@ -1014,7 +1073,8 @@ img {
   }
 
   .page-cta-tel {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+    font-weight: 900;
   }
 }
 
