@@ -1281,27 +1281,35 @@ img {
 }
 
 .btn--rules {
-  background: #E8F5E9 !important;
-  color: #3E3A39 !important;
+  background: #FF7096 !important;
+  color: #fff !important;
+  box-shadow: 0 4px 12px rgba(255, 112, 150, 0.4) !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 .btn--rules:hover {
-  background: #C8E6C9 !important;
+  background: #FF5080 !important;
+  box-shadow: 0 6px 18px rgba(255, 112, 150, 0.5) !important;
 }
 
 .btn--disclosure {
-  background: #E3F2FD !important;
-  color: #3E3A39 !important;
+  background: #42A5F5 !important;
+  color: #fff !important;
+  box-shadow: 0 4px 12px rgba(66, 165, 245, 0.4) !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 .btn--disclosure:hover {
-  background: #BBDEFB !important;
+  background: #1976D2 !important;
+  box-shadow: 0 6px 18px rgba(66, 165, 245, 0.5) !important;
 }
 
 .btn--policy {
   background: #FFE066 !important;
   color: #3E3A39 !important;
+  box-shadow: 0 4px 12px rgba(255, 224, 102, 0.4) !important;
 }
 .btn--policy:hover {
   background: #FFD54F !important;
+  box-shadow: 0 6px 18px rgba(255, 224, 102, 0.5) !important;
 }
 
 .contact-company-btn:hover,
