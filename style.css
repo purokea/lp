@@ -49,6 +49,10 @@ img {
   display: none;
 }
 
+.nowrap {
+  display: inline-block;
+}
+
 /* ---- Header ---- */
 .header {
   position: sticky;
@@ -994,13 +998,27 @@ img {
 
 /* ---- Responsive ---- */
 @media (max-width: 768px) {
+  .header-inner {
+    padding: 8px 12px;
+  }
+
+  .logo-main {
+    font-size: 1.05rem;
+  }
+
+  .header-cta {
+    padding: 6px 10px;
+    flex-shrink: 0;
+  }
+
   .sp-only {
     display: inline;
   }
 
   .hero-catch {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     margin-bottom: 4px;
+    letter-spacing: 0.05em; /* 詰める */
   }
 
   .hero-title {
@@ -1069,8 +1087,9 @@ img {
   }
 
   .header-cta-tel {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 900;
+    white-space: nowrap;
   }
 
   .service-card {
@@ -1079,6 +1098,10 @@ img {
 
   .page-hero-title {
     font-size: 1.6rem;
+  }
+
+  .page-hero-title .nowrap {
+    white-space: nowrap;
   }
 
   .page-features {
@@ -1097,7 +1120,8 @@ img {
 
 .page-cta-company-btn {
   display: block;
-  max-width: 340px;
+  max-width: 100%;
+  width: 360px;
   margin: 12px auto 0;
   background: #4A8C3F;
   color: #fff;
@@ -1240,7 +1264,8 @@ img {
 
 .contact-company-btn,
 .contact-policy-btn,
-.contact-rules-btn {
+.contact-rules-btn,
+.contact-disclosure-btn {
   display: inline-block;
   background: #fff;
   color: #2E7D32;
@@ -1260,14 +1285,16 @@ img {
   color: #3E3A39;
 }
 
-.contact-rules-btn {
+.contact-rules-btn,
+.contact-disclosure-btn {
   background: #8BC34A;
   color: #fff;
 }
 
 .contact-company-btn:hover,
 .contact-policy-btn:hover,
-.contact-rules-btn:hover {
+.contact-rules-btn:hover,
+.contact-disclosure-btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 24px rgba(0, 0, 0, 0.25);
   border-color: #fff;
@@ -1290,8 +1317,10 @@ img {
 
 @media (max-width: 680px) {
   .contact-company-btn,
-  .contact-policy-btn {
+  .contact-policy-btn,
+  .contact-rules-btn,
+  .contact-disclosure-btn {
     width: 100%;
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 }
