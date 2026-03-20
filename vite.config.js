@@ -11,6 +11,8 @@ export default defineConfig({
         jihi: resolve(__dirname, 'jihi/index.html'),
         isou: resolve(__dirname, 'isou/index.html'),
         seikatsu: resolve(__dirname, 'seikatsu/index.html'),
+        company: resolve(__dirname, 'company/index.html'),
+        policy: resolve(__dirname, 'policy/index.html'),
       },
     },
   },

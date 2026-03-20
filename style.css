@@ -707,6 +707,23 @@ img {
   opacity: 0.6;
 }
 
+.footer-nav {
+  margin-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 16px;
+}
+
+.footer-nav a {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.85rem;
+  transition: color 0.2s;
+}
+
+.footer-nav a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
 /* ---- Sub Pages ---- */
 .page-hero {
   padding: 60px 0;
@@ -1078,6 +1095,25 @@ img {
   }
 }
 
+.page-cta-company-btn {
+  display: block;
+  max-width: 340px;
+  margin: 12px auto 0;
+  background: #4A8C3F;
+  color: #fff;
+  font-weight: 700;
+  padding: 14px 24px;
+  border-radius: 30px;
+  font-size: 0.95rem;
+  transition: opacity 0.2s, transform 0.2s;
+  text-align: center;
+}
+
+.page-cta-company-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
 @media (max-width: 480px) {
   .hero-title {
     font-size: 1.7rem;
@@ -1094,5 +1130,168 @@ img {
   .hero-btn {
     padding: 12px 32px;
     font-size: 0.95rem;
+  }
+}
+
+/* ---- Profile Table ---- */
+.profile-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-top: 20px;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  border: 1px solid #f0ead6;
+}
+
+.profile-table tr th {
+  background: #f9fdfa;
+  color: #4A8C3F;
+  font-weight: 700;
+  padding: 20px 24px;
+  text-align: left;
+  width: 160px;
+  border-bottom: 1px solid #f0ead6;
+  font-size: 0.95rem;
+}
+
+.profile-table tr td {
+  padding: 20px 24px;
+  border-bottom: 1px solid #f0ead6;
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+.profile-table tr:last-child th,
+.profile-table tr:last-child td {
+  border-bottom: none;
+}
+
+@media (max-width: 560px) {
+  .profile-table tr th,
+  .profile-table tr td {
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+  }
+  .profile-table tr th {
+    padding-bottom: 4px;
+    border-bottom: none;
+    font-size: 0.85rem;
+  }
+  .profile-table tr td {
+    padding-top: 4px;
+  }
+}
+/* ---- Page Content Elements ---- */
+.policy-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  margin-bottom: 32px;
+  border: 1px solid #f0ead6;
+  border-left: 8px solid #8BC34A;
+}
+
+.policy-card-header {
+  padding: 24px 32px;
+  background: #f9fdfa;
+  border-bottom: 1px solid #f0ead6;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.policy-num {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #8BC34A;
+  opacity: 0.5;
+}
+
+.policy-card-header h2 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #3E3A39;
+}
+
+.policy-card-body {
+  padding: 32px;
+}
+
+.policy-card-body p {
+  font-size: 1.05rem;
+  line-height: 2;
+  color: #555;
+}
+
+/* ---- Contact Company Button ---- */
+.contact-company-btn-wrap {
+  text-align: center;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.contact-company-btn,
+.contact-policy-btn,
+.contact-rules-btn {
+  display: inline-block;
+  background: #fff;
+  color: #2E7D32;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 14px 24px;
+  border-radius: 40px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, background 0.2s, box-shadow 0.2s;
+  border: 2px solid transparent;
+  width: 300px;
+  text-align: center;
+}
+
+.contact-policy-btn {
+  background: #FFE066;
+  color: #3E3A39;
+}
+
+.contact-rules-btn {
+  background: #8BC34A;
+  color: #fff;
+}
+
+.contact-company-btn:hover,
+.contact-policy-btn:hover,
+.contact-rules-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.25);
+  border-color: #fff;
+}
+
+.contact-company-btn:hover {
+  background: #f0fdf4;
+  border-color: #fff;
+}
+
+.contact-policy-btn:hover {
+  background: #FFD54F;
+  border-color: #fff;
+}
+
+.footer-nav .separator {
+  margin: 0 10px;
+  opacity: 0.3;
+}
+
+@media (max-width: 680px) {
+  .contact-company-btn,
+  .contact-policy-btn {
+    width: 100%;
+    font-size: 1rem;
   }
 }
