@@ -130,10 +130,7 @@ img {
 .hero-bg {
   position: absolute;
   inset: 0;
-  background: 
-    linear-gradient(rgba(255, 253, 245, 0.3), rgba(255, 253, 245, 0.6)),
-    url('/hero-bg.jpg') no-repeat center center / contain;
-  background-color: #FFFDF5; /* 画像の背景色に合わせる */
+  background: radial-gradient(circle at 50% 50%, rgba(255, 253, 245, 1) 0%, rgba(255, 249, 230, 0.8) 100%);
   z-index: 0;
 }
 
@@ -173,9 +170,22 @@ img {
   font-size: 1.5rem;
   font-weight: 700;
   color: #4A8C3F;
-  margin-bottom: 8px;
+  margin-bottom: 24px;
   letter-spacing: 0.15em;
   font-family: 'Zen Maru Gothic', serif;
+}
+
+.hero-img-wrap {
+  max-width: 600px;
+  margin: 0 auto 24px;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  display: block;
 }
 
 .hero-sub {
