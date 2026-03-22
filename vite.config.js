@@ -1,7 +1,11 @@
 import { defineConfig } from 'vite'
 import { resolve } from 'path'
+import cloudflare from '@cloudflare/vite-plugin'
 
 export default defineConfig({
+  // plugins配列を追加し、cloudflareプラグインを有効化します
+  plugins: [cloudflare()],
+
   build: {
     outDir: 'dist',
     rollupOptions: {
