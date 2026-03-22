@@ -132,7 +132,8 @@ img {
   inset: 0;
   background: 
     linear-gradient(rgba(255, 253, 245, 0.3), rgba(255, 253, 245, 0.6)),
-    url('/hero-bg.jpg') no-repeat center top / cover;
+    url('/hero-bg.jpg') no-repeat center center / contain;
+  background-color: #FFFDF5; /* 画像の背景色に合わせる */
   z-index: 0;
 }
 
@@ -1470,7 +1471,9 @@ img {
 
 .payment-image-item img {
   width: 100%;
-  border-radius: 10px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 4px; /* 角丸を小さくして端が切れないようにする */
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   transition: transform 0.2s;
 }
